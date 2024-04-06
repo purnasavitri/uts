@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  /* border: 1px solid black; */
+}
+body {
+  margin: 0px 200px;
+  font-family: "Poppins", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0px;
+}
+
+header ul li {
+  list-style-type: none;
+  position: relative;
+  display: inline-block;
+  margin: 0px 15px;
+}
+header ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+header ul li a::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 100%;
+  background: #00a11c;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+header ul li a:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+header .name {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+#hero {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+.hero-text {
+    padding-right: 50px;
+}
+.hero-text h1 {
+    font-size: 2rem;
+}
+.hero-text p{
+    padding-bottom: 10px;
+}
+.hero-text a {
+    text-decoration: none;
+    background-color: #00a11c;
+    border-radius: 20px;
+    padding: 7px 15px;
+    color: #ffffff;
+    margin-top: 30px;
+}
+#hero img {
+  max-width: 600px;
+}
+#review {
+    background-color: #EEFFF9;
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin: 80px auto 0;
+    border-radius: 30px;
+}
+.review-card {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.review-card div {
+    width: 200px;
+    align-items: center;
+    text-align:center;
+    margin: 0px 15px;
+}
+#about {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+#about img {
+    max-width: 500px;
+}
+.about-text {
+    padding-left: 50px;
+}
+.about-text h1 {
+    font-size: 2rem;
+}
+.about-text p{
+    padding-bottom: 10px;
+}
+.about-text a {
+    text-decoration: none;
+    background-color: #00a11c;
+    border-radius: 20px;
+    padding: 7px 15px;
+    color: #ffffff;
+    margin-top: 30px;
+}
+#question {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0px;
+}
+.question-text {
+    max-width: 400px;
+}
+.question-list {
+    margin: 0px 30px;
+}
+.question-list p {
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 7px;
+    font-weight: 500;
+    box-shadow: 10px 5px 5px #f5f5f5;
+}
+.question-list p:hover {
+    box-shadow: 5px 4px 9px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s;
+}
+.question-text a {
+    text-decoration: none;
+    background-color: #00a11c;
+    border-radius: 20px;
+    padding: 7px 15px;
+    color: #ffffff;
+    margin-top: 30px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-bottom: 50px;
+    margin-right: 100px;
+}
+#name,
+#email,
+#message {
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#name,
+#email {
+  height: 30px;
+}
+button {
+    color: #ffffff;
+    background-color: #00a11c;
+    width: 80px;
+    height: 40px;
+    border: 1px solid #00a11c;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+/* #contact {
+    border: 1px solid black;
+    border-radius: 20px;
+} */
+
+.contact-box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0px;
+}
+.icon {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    padding-bottom: 30px;
+}
+.icon img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+span {
+    color: #00a11c;
+}
+.icon a {
+    margin-right: 10px;
+}
+.square {
+    width: 70px;
+    height: 5px;
+    background-color: #00a11c;
+    border-radius: 10px;
+}
+
+.health-title {
+    padding: 30px;
+    text-align: center;
+}
+.health-card {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.health-card div {
+    width: 200px;
+    align-items: center;
+    text-align:center;
+    margin: 0px 10px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    padding: 10px;
+}
+.health-card div:hover {
+    box-shadow: 5px 4px 9px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s;
+}
+.health-card div p {
+    font-size: 0.9rem;
+}
+#health {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#metode h1 {
+    text-align: center;
+}
+.metode-box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.metode-definisi {
+    max-width: 500px;
+}
+.metode-definisi h4 {
+    color: #00a11c;
+    margin: 10px 0px;
+}
+.metode-definisi h2 {
+    margin: 10px 0px;
+}
+.metode-definisi p {
+    margin: 30px 0px;
+}
+.metode-list p {
+    border-bottom: 1px solid #E0E0E0;
+    margin: 10px;
+    padding: 7px;
+    font-weight: 500;
+}
+
+.metode-akronim {
+    border: 1px solid #000000;
+    border-radius: 20px
+}
+.metode-akronim h2 {
+    text-align: center;
+}
+.metode-definisi a {
+    text-decoration: none;
+    background-color: #00a11c;
+    border-radius: 20px;
+    padding: 7px 15px;
+    color: #ffffff;
+    margin-top: 30px;
+}
